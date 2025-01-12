@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Store</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar index-navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="logo">
+            <a href="index.html"><img src="assets/sneaker-logo.png" alt=""></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#product-showcase">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart">
+            <a href="cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero_section section">
+        <div class="hero-content">
+            <h1>Welcome to Our Store</h1>
+            <p>Discover products that make a difference</p>
+            <a href="#product-showcase" class="btn hero_btn btn-outline-secondary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <!--<section id="about" class="about_section section">
+        <h2>About Our Product</h2>
+        <p>Our product is carefully crafted to provide you with the best quality and value for your money. Here's why it's worth every penny...</p>
+    </section>-->
+
+  <!-- Product Showcase Section -->
+<section id="product-showcase" class="product_section section">
+  <h2>Our Products</h2>
+  
+  <div class="container py-5">
+      <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4 col-sm-6">
+              <a href="productPage1.html" class="card text-bg-dark">
+                  <img src="assets/nike_right.png" class="card-img" alt="Nike Air Force 1 '07">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Nike Air Force 1 '07</h5>
+                  </div>
+              </a>
+              <a href="productPage1.html" class="btn product_btn btn-outline-secondary btn-lg">Buy</a>
+          </div>
+      
+          <!-- Card 2 -->
+          <div class="col-md-4 col-sm-6">
+              <a href="productPage2.html" class="card text-bg-dark">
+                  <img src="assets/dunk_low_right.png" class="card-img" alt="Nike Dunk Low Retro">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Nike Dunk Low Retro</h5>
+                  </div>
+              </a>
+              <a href="productPage2.html" class="btn product_btn btn-outline-secondary btn-lg">Buy</a>
+          </div>
+      
+          <!-- Card 3 -->
+          <div class="col-md-4 col-sm-6">
+              <a href="productPage3.html" class="card text-bg-dark">
+                  <img src="assets/air_max90_right.png" class="card-img" alt="Nike Air Max 90">
+                  <div class="card-img-overlay">
+                      <h5 class="card-title">Nike Air Max 90</h5>
+                  </div>
+              </a>
+              <a href="productPage3.html" class="btn product_btn btn-outline-secondary btn-lg">Buy</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+    <!-- Testimonial Section -->
+<section id="testimonials" class="testimonial_section section">
+  <h2>What Our Customers Say</h2>
+
+  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- First Card -->
+          <div class="carousel-item active">
+              <div class="testmonial_card mb-3" style="max-width: 600px; margin: 0 auto;">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="assets/kumar.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Kumar Radesh</h5>
+                              <p class="card-text">"Good quality at an affordable price. Looking forward to more purchases."</p>
+                              <p class="card-text"><small class="text-body-secondary">&#9733; &#9733; &#9733; &#9733; &#9733;</small></p>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Second Card -->
+          <div class="carousel-item">
+              <div class="testmonial_card mb-3" style="max-width: 600px; margin: 0 auto;">
+                  <div class="row g-0">
+                      <div class="col-md-4">
+                          <img src="assets/michael.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <h5 class="card-title">Michael</h5>
+                              <p class="card-text">"I've had my sneakers for years. Would absolutely recommend."</p>
+                              <p class="card-text"><small class="text-body-secondary">&#9733; &#9733; &#9733; &#9733; &#9733;</small></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+          <!--Third Card-->
+          <div class="carousel-item">
+            <div class="testmonial_card mb-3" style="max-width: 600px; margin: 0 auto;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/rachel.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Rachel</h5>
+                            <p class="card-text">"Bought a pair for my nephew last year. He still loves them!"</p>
+                            <p class="card-text"><small class="text-body-secondary">&#9733; &#9733; &#9733; &#9733; &#9733;</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Fourth Card-->
+        <div class="carousel-item">
+          <div class="testmonial_card mb-3" style="max-width: 600px; margin: 0 auto;" >
+              <div class="row g-0">
+                  <div class="col-md-4">
+                      <img src="assets/roderick.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                      <div class="card-body">
+                          <h5 class="card-title">Roderick</h5>
+                          <p class="card-text">"I've been using mine to work for years. Will definitely buy another pair."</p>
+                          <p class="card-text"><small class="text-body-secondary">&#9733; &#9733; &#9733; &#9733; &#9733;</small></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <!--Fifth Card-->
+
+      <div class="carousel-item">
+        <div class="testmonial_card mb-3" style="max-width: 600px; margin: 0 auto;" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="assets/diana.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Diana</h5>
+                        <p class="card-text">"Bougt a pair of running shoes a few months ago. Now I'm thinking about buying another pair.</p>
+                        <p class="card-text"><small class="text-body-secondary">&#9733; &#9733; &#9733; &#9733; &#9733;</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+      </div>
+
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</section>
+
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faq_section section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+          <h3 class="faq-question">What is the return policy?</h3>
+          <button class="dropdown-toggle">+</button>
+          <p class="answer text-dark">Our return policy lasts 30 days. If 30 days have passed since your purchase, we cannot offer you a refund or exchange.</p>
+      </div>
+
+      <div class="faq-item">
+          <h3 class="faq-question">How do I track my order?</h3>
+          <button class="dropdown-toggle">+</button>
+          <p class="answer text-dark">Once your order is shipped, you will receive a tracking number via email. Use it to track your shipment on our carrier's website.</p>
+      </div>
+
+      <div class="faq-item">
+          <h3 class="faq-question">What sizes are available?</h3>
+          <button class="dropdown-toggle">+</button>
+          <p class="answer text-dark">We offer sneakers in sizes ranging from 7 to 
+            14, including both men's and women's sizing. Check our product pages 
+            for size availability.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3 class="faq-question">Do you offer half sizes?</h3>
+        <button class="dropdown-toggle">+</button>
+        <p class="answer text-dark">Once your order is shipped, you will receive a tracking number via email. 
+          Use it to track your shipment on our carrier's website.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3 class="faq-question">How do I know my shoe size?</h3>
+      <button class="dropdown-toggle">+</button>
+      <p class="answer text-dark">Use our size guide to measure your feet and find the best fit. If you’re between 
+        sizes, we recommend going up for a comfortable fit.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 class="faq-question">What are the shipping options?</h3>
+    <button class="dropdown-toggle">+</button>
+    <p class="answer text-dark">We offer standard, expedited, and express shipping options. The available methods
+       and costs will be displayed during checkout.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">How long does shipping take?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">Standard shipping takes 5-7 business days, expedited shipping takes 2-3 business
+     days, and express shipping delivers in 1-2 business days. Delivery times may vary based on 
+     your location.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">Do you ship internationally?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">Yes, we ship to select countries worldwide. Shipping fees and delivery times for 
+    international orders will be calculated at checkout.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">What is your return policy?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">We accept returns within 30 days of purchase. Items must be unworn, in their
+     original packaging, and accompanied by proof of purchase.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">Can I exchange my sneakers for a different size?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">Yes, exchanges are allowed for size adjustments within 30 days. Contact our customer 
+    service to initiate an exchange.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">Do I have to pay for return shipping?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">For domestic returns, we offer free return shipping. For international orders, 
+    customers are responsible for return shipping costs.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">What payment methods do you accept?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">We accept all major credit cards, PayPal, Apple Pay, and Google Pay. Additional 
+    payment methods may be available depending on your location.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">Can I cancel my order after placing it?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">Orders can be canceled within 1 hour of placement. After this window, the 
+    order may already be processed and shipped.</p>
+</div>
+
+<div class="faq-item">
+  <h3 class="faq-question">Do you offer discounts or promo codes?</h3>
+  <button class="dropdown-toggle">+</button>
+  <p class="answer text-dark">Yes, we occasionally offer discounts and promo codes. Sign up for our 
+    newsletter or follow us on social media to stay updated.</p>
+</div>
+
+
+  </section>
+  
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-media">
+            <a href="mailto:isaacpm01@outlook.com" target="_blank">Email</a>
+            <a href="https://www.instagram.com/isaac.p.m_/profilecard/?igsh=MXJ5b3hhbWNhMHlwaQ%3D%3D" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.upwork.com/freelancers/~01f58729fe1c1dfeb0?mp_source=share" target="_blank" rel="noopener noreferrer">Upwork</a>
+            <a href="https://www.linkedin.com/in/isaac-peña-9a4568301" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <div class="sitemap">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact</a>
+        </div>
+        <div class="copyright">
+          © 2024 Isaac Peña. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Link to your JS file -->
+</body>
+</html>

@@ -1,0 +1,712 @@
+body {
+    font-family: 'Playfair Display', serif !important;
+}
+
+
+.section {
+    min-height: 100vh;
+}
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+/* Base Navbar Styles */
+#navbar {
+    display: flex;
+    justify-content: space-between; /* Ensures the logo and cart are spaced out */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent !important; /* Default: transparent */
+    position: fixed; /* Keeps the navbar fixed */
+    top: 0;
+    width: 100%; /* Spans the entire width */
+    z-index: 1000; /* Stays above other content */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for color changes */
+}
+
+.index-navbar li a {
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 90px;
+}
+
+/* Logo Styles */
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* Default logo color */
+}
+
+/* Nav Links Styles */
+.nav-links {
+    display: flex;
+    justify-content: center; /* Centers the nav links */
+    flex-grow: 1; /* Ensures the nav links take up the remaining space */
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Default link color */
+    font-size: 18px;
+}
+
+.logo img{
+    height: 80px;
+    width: 80px;
+
+}
+
+
+/* Cart Link Styles */
+.cart a {
+    text-decoration: none;
+    color: white; /* Default cart color */
+    font-size: 18px;
+}
+
+/* Scrolled Navbar Styles */
+#navbar.scrolled {
+    background-color: white !important; /* Turns white when scrolled */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
+}
+
+#navbar.scrolled .logo a,
+#navbar.scrolled .nav-links a,
+#navbar.scrolled .cart a {
+    color: black; /* Text turns black when navbar is white */
+}
+
+/* Ensure No Layout Shifts */
+body {
+    margin: 0;
+    padding: 0;
+     /* Adjust this to match navbar height to avoid content overlapping */
+}
+
+
+
+
+
+/* Hero Section */
+.hero_section {
+    position: relative;
+    min-height: 100vh; /* Adjust height as needed */ 
+    background: url('assets/sneaker_rack.jpg') no-repeat center center/cover !important;
+}
+
+.hero_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(84, 84, 84, 0.5);
+    z-index: 0;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: flex-start; /* Align items to the left */
+    padding-left: 40px; /* Same left padding for all items */
+    padding-top: 190px; /* Same top padding as your h1 */
+    gap: 20px; /* Space between elements */
+}
+
+.hero_section h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    z-index: 1;
+}
+
+.hero_section p {
+    font-size: 1.2rem; /* Adjust font size */
+    margin: 0;
+    margin-left: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.hero_section .hero_btn {
+    padding: 10px 20px; /* Adjust padding to your preference */
+    font-size: 1rem; /* Adjust font size */
+    margin-top: 20px; /* Add some space above the button */
+    margin-left: 0px;
+    width: 33%;
+    text-align: center;
+    z-index: 0;
+    border-radius: 0 !important;
+    color: black; /* Text color */
+    border: 2px solid black; /* Black outline */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.hero_section .hero_btn:hover {
+    background-color: black; /* Black fill on hover */
+    color: white; /* White text on hover for contrast */
+}
+
+
+
+/* Products Section */
+
+.product_section {
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px; /* Added padding for better spacing */
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between thumbnails */
+    margin-right: 0px;
+}
+
+.product_section .product_btn {
+    border-radius: 0; /* Ensures the button is squared */
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 !important; /* Use !important to override any other styles */
+    color: black; /* Text color */
+    border: 2px solid black; /* Black outline */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+
+.product_section .product_btn:hover{
+    background-color: black; /* Black fill on hover */
+    color: white; /* White text on hover for contrast */
+}
+
+.container img {
+    height: auto;
+    border-radius: 0; /* Removes rounding for images */
+    border-radius: 0 !important; /* Remove any rounding from the images */
+
+}
+
+.card-img {
+    border-radius: 0; /* Ensures images in cards are squared */
+}
+
+.card {
+    border-radius: 0 !important; /* Remove rounding from the cards */
+}
+
+
+.card h5{
+    color: black;
+}
+
+
+
+
+
+/* Testimonial Section */
+
+.testimonial_section{
+    background-color: black;
+    position: relative;
+    min-height: 100vh;
+    padding: 40px 20px; /* Added padding for better spacing */
+    text-align: center;
+}
+
+.testimonial_section h2 {
+    margin-top: 10px;
+    color: white;
+}
+
+.testimonial_section p {
+    color: white;
+}
+
+.testimonial_card{
+    max-width:400px;
+    max-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+            /* Space between thumbnails */
+    margin-right: 0px;
+}
+
+.carousel {
+    margin-top: 140px;
+}
+
+.card-body h5{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card-body p{
+    font-style: italic;
+}
+
+
+.testimonial_section .text-body-secondary {
+    color: white !important; /* Force the color to white */
+    font-size: 0.9rem; /* Optional: Adjust the size */
+    letter-spacing: 2px; /* Optional: Add spacing between stars */
+}
+
+.testimonial_section .col-md-4 img {
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+/* FAQ Section */
+.faq_section {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: left;
+    border-top: 2px solid #ddd;
+}
+
+.faq_section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.faq-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #007bff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-toggle.rotate {
+    transform: rotate(45deg); /* Rotate for open state */
+}
+
+.answer {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Expand animation */
+.faq-item.active .answer {
+    display: block; /* Show the answer */
+}
+
+
+
+
+/* Product Page */
+
+
+.product-page {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px !important;
+}
+.product-page .col-md-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-page .col-md-2 img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.product-page .col-md-2 img:hover {
+    transform: scale(1.1);
+}
+.product-page .col-md-5.text-center img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.product-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.quantity {
+    max-width: 100px;
+    margin-bottom: 1rem;
+}
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.btn {
+    border-radius: 0; /* Ensures the button is squared */
+    margin-top: 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0 !important; /* Use !important to override any other styles */
+    color: black; /* Text color */
+    border: 2px solid black !important; /* Black outline */
+    background-color: transparent; /* Transparent background */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+
+.btn:hover{
+    background-color: black !important; /* Black fill on hover */
+    color: white !important; /* White text on hover for contrast */
+}
+
+
+
+
+
+
+.navbar-active {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-active li a{
+    color: black !important;
+}
+
+.prod_navbar .logo a{
+    color: black;
+}
+
+.prod_navbar .cart a{
+    color: black;
+}
+
+.prod_navbar li a{
+    color: black !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 90px;
+}
+
+
+
+
+
+/*About Section */
+
+.about_navbar li a{
+    color: black;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    gap: 2rem;
+    background-color: black;
+    min-height: 100vh;
+}
+.about-section .text-content {
+    flex: 1;
+    max-width: 500px;
+    font-family: 'Playfair Display', serif;
+}
+.about-section .text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.about-section .text-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+.about-section .image-content {
+    flex: 1;
+    max-width: 500px;
+}
+.about-section .image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about_navbar li a {
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 90px;
+    color: white;
+}
+
+.about_navbar .cart a{
+    color: white;
+}
+
+.about_navbar .logo a{
+    color: white;
+}
+
+.about-section h1, p{
+    color: white !important;
+}
+
+
+
+
+/* Cart Page */
+
+.cart-section {
+    min-height: 100vh;
+    margin-top: 10px;
+}
+
+.cart-section h2{
+    margin-top: 40px;
+}
+
+
+.cart_navbar li a{
+    color: black;
+}
+
+
+.cart_navbar .logo a{
+    color: black;
+}
+
+.cart_navbar .cart a{
+    color: black;
+}
+
+.card-body-cart h5 {
+    color: black !important;
+}
+
+.cart_navbar li a {
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 90px;
+}
+
+.card-title h5{
+    color: black !important;
+}
+
+.card-body-cart .card-text p{
+    color: black !important;
+}
+
+
+
+
+/* Contact Section */
+
+/*Contact Section*/
+
+
+.contact_section {
+    height: 60vh;
+    background-color: black;
+    padding: 40px 20px; /* Added padding for better spacing */
+    text-align: center;
+}
+
+.contact_icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px; /* Space between thumbnails */
+    margin-right: 50px;
+}
+
+.contact_section h2{
+    margin-top: 50px;
+    margin-bottom: 80px; /* Added margin to space out the header */
+    font-size: 2em;
+    color: white;
+}
+
+.contact_thumbnail img{
+    width: 50%;
+    height: auto;
+    border-radius: 8px
+}
+
+.contact_thumbnail {
+    width: 30%;
+    max-width: 200px; /* Optional: max width for larger screens */
+}
+
+.contact_section h5{
+    margin-top: 130px;
+    color: white;
+}
+
+.contact-navbar li a {
+    color: white !important;
+    text-align: center !important;
+    justify-content: center !important;
+    margin-right: 90px;
+}
+
+.contact-navbar .cart a{
+    color: white !important;
+}
+
+.contact-navbar .logo a{
+    color: white !important;
+}
+
+
+
+
+
+
+/* Footer */
+
+/* Footer Section */
+footer {
+    background-color: #222; /* Dark background */
+    color: white; /* Text color */
+    padding: 20px 40px; /* Add spacing */
+    display: flex;
+    justify-content: space-between; /* Space out columns */
+    flex-wrap: wrap; /* Allow rows on smaller screens */
+}
+
+footer .social-media,
+footer .sitemap {
+    flex: 1 1 200px; /* Flex basis for equal width and responsiveness */
+    margin: 10px 0; /* Add spacing between sections */
+}
+
+footer .social-media a,
+footer .sitemap a {
+    display: block; /* Stack links vertically */
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px; /* Spacing between links */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social-media a:hover,
+footer .sitemap a:hover {
+    color: #1e90ff; /* Change to a highlight color on hover */
+}
+
+footer {
+    text-align: center; /* Center content on smaller screens */
+}
+
+footer .social-media,
+footer .sitemap {
+    text-align: left; /* Align columns to the left */
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+        align-items: center; /* Center content */
+    }
+
+    footer .social-media,
+    footer .sitemap {
+        text-align: center; /* Center links */
+    }
+}
+
+/* Footer Section */
+footer .copyright {
+    text-align: center; /* Center the text */
+    margin-top: 80px; /* Add spacing above the copyright text */
+    color: #aaa; /* Light gray for subtlety */
+    font-size: 0.9rem; /* Slightly smaller font size */
+    padding-top: 10px; /* Padding to separate it from the rest of the footer */
+    border-top: 1px solid #444; /* Optional: Add a subtle separator line */
+}
+
+@media (max-width: 768px) {
+    footer .copyright {
+        margin-top: 15px; /* Adjust spacing for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
