@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         alert("Proceeding to checkout...");
-        // You can add further checkout functionality here
+    
     });
 
     // Initial render
